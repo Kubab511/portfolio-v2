@@ -1,9 +1,20 @@
 import Hamburger from "hamburger-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ReactCountryFlag from "react-country-flag";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export function Navbar() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const lang = localStorage.getItem("lang");
+  
+    if (lang === "pl") {
+      navigate("/pl");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
 
@@ -20,6 +31,9 @@ export function Navbar() {
 
   function scrollToTopLangChange() {
     const element = document.getElementById("top");
+
+    localStorage.setItem("lang", "pl");
+
     if (element) {
       element.scrollIntoView();
     }
@@ -27,6 +41,9 @@ export function Navbar() {
 
   function scrollToTopLangChangeMobile() {
     const element = document.getElementById("top");
+
+    localStorage.setItem("lang", "pl");
+
     if (element) {
       element.scrollIntoView();
     }

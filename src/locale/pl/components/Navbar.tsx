@@ -20,6 +20,9 @@ export function Navbar() {
 
   function scrollToTopLangChange() {
     const element = document.getElementById("top");
+
+    localStorage.setItem("lang", "en");
+
     if (element) {
       element.scrollIntoView();
     }
@@ -27,6 +30,9 @@ export function Navbar() {
 
   function scrollToTopLangChangeMobile() {
     const element = document.getElementById("top");
+
+    localStorage.setItem("lang", "en");
+
     if (element) {
       element.scrollIntoView();
     }
