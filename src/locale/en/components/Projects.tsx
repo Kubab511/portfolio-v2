@@ -9,6 +9,14 @@ const projectData = [
     image: "/projects/1.webp",
     gitUrl: "https://github.com/Kubab511/jbx-profiles",
     previewUrl: "https://jbx-profiles.com/"
+  },
+  {
+    id: 2,
+    title: "My portfolio",
+    description: "A portfolio website made in React",
+    image: "/projects/2.webp",
+    gitUrl: "https://github.com/Kubab511/portfolio-v2",
+    previewUrl: ""
   }
 ]
 
