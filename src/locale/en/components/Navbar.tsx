@@ -1,6 +1,5 @@
 import Hamburger from "hamburger-react";
 import { useEffect, useRef, useState } from "react";
-import ReactCountryFlag from "react-country-flag";
 import { NavLink, useNavigate } from "react-router-dom";
 
 export function Navbar() {
@@ -87,13 +86,7 @@ export function Navbar() {
               More
             </button>
             <NavLink to="/pl" onClick={scrollToTopLangChange} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0  hover:text-white hover:cursor-pointer"}>
-              <ReactCountryFlag 
-                countryCode="pl" 
-                style={{
-                  fontSize: '1.5em',
-                  lineHeight: '1.5em',
-                }}  
-              />
+              <img src="/flags/pl.png" className="w-8 h-5 rounded"/>
             </NavLink>
           </ul>
         </div>
@@ -113,13 +106,7 @@ export function Navbar() {
           More
           </button>
           <NavLink to="/pl" onClick={scrollToTopLangChangeMobile} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer"}>
-            <ReactCountryFlag 
-              countryCode="pl" 
-              style={{
-                fontSize: '1.5em',
-                lineHeight: '1.5em',
-              }}  
-            />
+            <img src="/flags/pl.png" className="w-8 h-5 rounded"/>
           </NavLink>
         </ul>
       )}
