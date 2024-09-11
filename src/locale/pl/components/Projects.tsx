@@ -5,10 +5,18 @@ const projectData = [
   {
     id: 1,
     title: "JBX Profiles",
-    description: "Responsywna strona internetowa zrobiona w Reactie",
+    description: "Responsywna strona internetowa zrobiona w React’ie",
     image: "/projects/1.webp",
     gitUrl: "https://github.com/Kubab511/jbx-profiles",
     previewUrl: "https://jbx-profiles.com/"
+  },
+  {
+    id: 2,
+    title: "Moje portfolio",
+    description: "Strona portfolio zrobiona w React’ie",
+    image: "/projects/2.webp",
+    gitUrl: "https://github.com/Kubab511/portfolio-v2",
+    previewUrl: ""
   }
 ]
 
