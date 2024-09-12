@@ -28,6 +28,15 @@ const projectData = [
     gitUrl: "https://github.com/Kubab511/lc-report-112081",
     hasPreview: false,
     previewUrl: ""
+  },
+  {
+    id: 4,
+    title: "JBot",
+    description: "A simple Discord bot for moderation and role management",
+    image: "/projects/4.webp",
+    gitUrl: "https://github.com/Kubab511/discord-jbot",
+    hasPreview: false,
+    previewUrl: ""
   }
 ]
 
