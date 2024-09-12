@@ -74,6 +74,9 @@ export function Navbar() {
             <button onClick={() => scrollToElement("more")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0  hover:text-white hover:cursor-pointer"}>
               Więcej
             </button>
+            <p className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:cursor-default"}>
+              |
+            </p>
             <NavLink to="/" onClick={scrollToTopLangChange} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0  hover:text-white hover:cursor-pointer"}>
               <img src="/flags/uk.png" className="w-8 h-5 rounded"/>
             </NavLink>

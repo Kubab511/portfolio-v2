@@ -8,14 +8,16 @@ const projectData = [
     description: "Responsywna strona internetowa zrobiona w React’ie",
     image: "/projects/1.webp",
     gitUrl: "https://github.com/Kubab511/jbx-profiles",
+    hasPreview: true,
     previewUrl: "https://jbx-profiles.com/"
   },
   {
     id: 2,
     title: "Moje portfolio",
-    description: "Strona portfolio zrobiona w React’ie",
+    description: "Moja osobista strona zrobiona w React’ie",
     image: "/projects/2.webp",
     gitUrl: "https://github.com/Kubab511/portfolio-v2",
+    hasPreview: false,
     previewUrl: ""
   }
 ]
@@ -24,6 +26,7 @@ export function Projects() {
   return (
     <>
       <section id="projects">
+        <br />
         <br />
         <br />
         <br />
@@ -45,13 +48,15 @@ export function Projects() {
                   >
                     <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/NavLink:text-white" />
                   </NavLink>
-                  <NavLink
-                    to={project.previewUrl}
-                    target="_blank"
-                    className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/NavLink"
-                  >
-                    <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/NavLink:text-white" />
-                  </NavLink>
+                  {project.hasPreview && (
+                    <NavLink
+                      to={project.previewUrl}
+                      target="_blank"
+                      className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/NavLink"
+                    >
+                      <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/NavLink:text-white" />
+                    </NavLink>
+                  )}
                 </div>
               </div>
               <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
