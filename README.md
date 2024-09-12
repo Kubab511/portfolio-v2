@@ -1,5 +1,5 @@
-# CV Website Project
+# Personal Website
 
-This is my project which aims to create a website with a portfolio of my work as well as my CV
+This is my personal website made fully in React TS
 
-Made fully in html with JS scripting and using Tailwind CSS for styling
+It aims to showcase my skills and projects I've worked on
