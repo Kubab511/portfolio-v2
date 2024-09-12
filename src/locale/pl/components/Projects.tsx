@@ -19,6 +19,15 @@ const projectData = [
     gitUrl: "https://github.com/Kubab511/portfolio-v2",
     hasPreview: false,
     previewUrl: ""
+  },
+  {
+    id: 3,
+    title: "Projekt maturalny",
+    description: "Projekt maturalny z informatyki",
+    image: "/projects/3.webp",
+    gitUrl: "https://github.com/Kubab511/lc-report-112081",
+    hasPreview: false,
+    previewUrl: ""
   }
 ]
 

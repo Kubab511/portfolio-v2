@@ -19,6 +19,15 @@ const projectData = [
     gitUrl: "https://github.com/Kubab511/portfolio-v2",
     hasPreview: false,
     previewUrl: ""
+  },
+  {
+    id: 3,
+    title: "Leaving Cert project",
+    description: "My Leaving Cert computer science project",
+    image: "/projects/3.webp",
+    gitUrl: "https://github.com/Kubab511/lc-report-112081",
+    hasPreview: false,
+    previewUrl: ""
   }
 ]
 
