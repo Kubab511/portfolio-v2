@@ -24,7 +24,7 @@ export function Button({ active, selectTab, children }: Item) {
         animate={active ? "active" : "default"}
         variants={variants}
         className="h-1 bg-sky-500 mt-1 mr-3"
-      ></motion.div>
+      />
     </button>
   )
 }

@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 const DATA = [
   {
-    title: "Umiejętności",
+    title: "Skills",
     id: "skills",
     content: (
       <ul className="pl-2 list-disc">
@@ -14,7 +14,7 @@ const DATA = [
     )
   },
   {
-    title: "Wykształcenie",
+    title: "Educaiton",
     id: "education",
     content: (
       <ul className="pl-2 list-disc">
@@ -24,7 +24,7 @@ const DATA = [
     )
   },
   {
-    title: "Doświadczenie",
+    title: "Experience",
     id: "experience",
     content: (
       <ul className="pl-2 list-disc">
@@ -34,7 +34,7 @@ const DATA = [
     )
   },
   {
-    title: "Języki",
+    title: "Languages",
     id: "languages",
     content: (
       <ul className="pl-2 list-disc">
@@ -82,28 +82,28 @@ export function About() {
               active={tab === "skills"}
             >
               {" "}
-              Skills{" "}
+              Skills
             </Button>
             <Button
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              Education
             </Button>
             <Button
               selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}
             >
               {" "}
-              Experience{" "}
+              Experience
             </Button>
             <Button
               selectTab={() => handleTabChange("languages")}
               active={tab === "languages"}
             >
               {" "}
-              Languages{" "}
+              Languages
             </Button>
             </div>
             <div className="mt-8">
