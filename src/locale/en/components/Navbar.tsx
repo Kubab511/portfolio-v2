@@ -72,7 +72,7 @@ export function Navbar() {
         <button onClick={scrollToTop}>
             <img src="/favicon.webp" alt="Logo" className="h-10 w-10"/>
           </button> 
-          <h1 className="text-[#ADB7BE] text-4xl pl-2 hidden md:block">Jakub Barabasz</h1>
+          <h1 className="text-[#ADB7BE] text-4xl pl-2 hidden md:block select-none">Jakub Barabasz</h1>
         </div>
         <div className="menu hidden md:block md:w-auto">
           <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
@@ -85,7 +85,7 @@ export function Navbar() {
             <button onClick={() => scrollToElement("more")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0  hover:text-white hover:cursor-pointer"}>
               More
             </button>
-            <p className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:cursor-default"}>
+            <p className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 select-none"}>
               |
             </p>
             <NavLink to="/pl" onClick={scrollToTopLangChange} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0  hover:text-white hover:cursor-pointer"}>
