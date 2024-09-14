@@ -5,7 +5,7 @@ const projectData = [
   {
     id: 1,
     title: "JBX Profiles",
-    description: "A responsive website made in react",
+    description: "A simple website made in React TS",
     image: "/projects/1.webp",
     gitUrl: "https://github.com/Kubab511/jbx-profiles",
     hasPreview: true,
@@ -14,7 +14,7 @@ const projectData = [
   {
     id: 2,
     title: "My portfolio",
-    description: "My personal website made in React",
+    description: "My personal website made in React TS",
     image: "/projects/2.webp",
     gitUrl: "https://github.com/Kubab511/portfolio-v2",
     hasPreview: false,

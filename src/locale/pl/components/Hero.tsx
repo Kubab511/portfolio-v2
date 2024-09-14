@@ -24,9 +24,9 @@ export function Hero() {
                 repeat={Infinity}
               />
             </h1>
-            <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+            {/* <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
               Student informatyki 2 roku
-            </p>
+            </p> */}
             <div>
               <a className="px-6 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800 text-white" target="_blank" href="mailto:barabasz.kuba@gmail.com">Napisz do mnie</a>
               <a className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:bg-slate-800 text-white mt-3" target="_blank" href="/resume_pl.pdf">

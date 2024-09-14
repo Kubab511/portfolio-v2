@@ -5,7 +5,7 @@ const projectData = [
   {
     id: 1,
     title: "JBX Profiles",
-    description: "Responsywna strona internetowa zrobiona w React’ie",
+    description: "Prosta strona internetowa zrobiona w React TS",
     image: "/projects/1.webp",
     gitUrl: "https://github.com/Kubab511/jbx-profiles",
     hasPreview: true,
@@ -14,7 +14,7 @@ const projectData = [
   {
     id: 2,
     title: "Moje portfolio",
-    description: "Moja osobista strona zrobiona w React’ie",
+    description: "Moja osobista strona zrobiona w React TS",
     image: "/projects/2.webp",
     gitUrl: "https://github.com/Kubab511/portfolio-v2",
     hasPreview: false,
