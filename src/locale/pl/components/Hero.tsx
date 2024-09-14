@@ -14,9 +14,9 @@ export function Hero() {
                 sequence={[
                   "Kuba",
                   1000,
-                  "Student",
+                  "Studentem",
                   1000,
-                  "Programista",
+                  "Programistą",
                   1000
                 ]}
                 wrapper="span"

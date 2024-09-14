@@ -64,7 +64,7 @@ export function Projects() {
                     target="_blank"
                     className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/NavLink"
                   >
-                    <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/NavLink:text-white" />
+                    <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/NavLink:text-white" />
                   </NavLink>
                   {project.hasPreview && (
                     <NavLink
@@ -72,7 +72,7 @@ export function Projects() {
                       target="_blank"
                       className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/NavLink"
                     >
-                      <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/NavLink:text-white" />
+                      <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/NavLink:text-white" />
                     </NavLink>
                   )}
                 </div>
