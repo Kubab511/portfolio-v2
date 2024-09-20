@@ -64,7 +64,7 @@ export function About() {
         <br />
         <br />
         <br />
-        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
           <figure>
             <img className="rounded-2xl h-200 w-200" src="/about-me.webp" alt="About Image" />
             <figcaption className="text-center text-slate-400 text-lg">Roháčske plesá - Slovakia &#128247; Jakub Barabasz</figcaption>
