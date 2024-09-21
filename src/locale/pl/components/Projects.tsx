@@ -53,7 +53,7 @@ export function Projects() {
         </h2>
         <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
           {projectData.map((project) => (
-            <li>
+            <li className="flex flex-col justify-between">
               <div
                 className="h-52 md:h-72 rounded-t-xl relative group border-4 border-[#181818]"
                 style={{ background: `url(${project.image})`, backgroundSize: "cover" }}
@@ -77,7 +77,7 @@ export function Projects() {
                   )}
                 </div>
               </div>
-              <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
+              <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 grow">
                 <h5 className="text-xl font-semibold mb-2">{project.title}</h5>
                 <p className="text-[#ADB7BE]">{project.description}</p>
               </div>
