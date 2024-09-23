@@ -77,8 +77,8 @@ export function Projects() {
                   )}
                 </div>
               </div>
-              <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 grow">
-                <h5 className="text-xl font-semibold mb-2">{project.title}</h5>
+              <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 grow flex flex-col">
+                <h5 className="text-xl font-semibold mb-2 self-center">{project.title}</h5>
                 <p className="text-[#ADB7BE]">{project.description}</p>
               </div>
             </li>
