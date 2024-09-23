@@ -53,7 +53,7 @@ export function Projects() {
         </h2>
         <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
           {projectData.map((project) => (
-            <li className="flex flex-col justify-between">
+            <li className="flex flex-col justify-between" key={project.id}>
               <div
                 className="h-52 md:h-72 rounded-t-xl relative group border-4 border-[#181818]"
                 style={{ background: `url(${project.image})`, backgroundSize: "cover", backgroundPosition: "center" }}

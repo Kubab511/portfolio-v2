@@ -6,7 +6,7 @@ const DATA = [
     title: "Umiejętności",
     id: "skills",
     content: (
-      <ul className="pl-2 list-disc">
+      <ul className="pl-2 list-disc" key={"skills"}>
         <li>Python</li>
         <li>C</li>
         <li>TypeScript</li>
@@ -17,7 +17,7 @@ const DATA = [
     title: "Wykształcenie",
     id: "education",
     content: (
-      <ul className="pl-2 list-disc">
+      <ul className="pl-2 list-disc" key={"education"}>
         <li>Inżynier Informatyki - TU Dublin - 2023-2027</li>
         <li>Leaving Certificate (Matura) - Malahide Community School - 2023</li>
       </ul>
@@ -27,7 +27,7 @@ const DATA = [
     title: "Doświadczenie",
     id: "experience",
     content: (
-      <ul className="pl-2 list-disc">
+      <ul className="pl-2 list-disc" key={"experience"}>
         <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://zhp.ie/">ZHP Irlandia</a> - Drużynowy</li>
         <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polskie tłumaczenie</li>
       </ul>
@@ -37,7 +37,7 @@ const DATA = [
     title: "Języki",
     id: "languages",
     content: (
-      <ul className="pl-2 list-disc">
+      <ul className="pl-2 list-disc" key={"languages"}>
         <li>Polski - Ojczysty</li>
         <li>Angielski - C2</li>
         <li>Niemiecki - B1</li>
