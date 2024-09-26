@@ -58,8 +58,8 @@ export function Projects() {
                 <h5 className="text-2xl font-semibold mb-2 self-center">{project.title}</h5>
                 <p className="text-[#ADB7BE]">{project.description}</p>
                 <div className="flex justify-center absolute bottom-4 left-0 right-0 ">
-                  <Link to={project.gitUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Kod źródłowy</Link>
-                  {project.hasPreview && <Link to={project.gitUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Podgląd</Link>}
+                  <Link to={project.gitUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Source code</Link>
+                  {project.hasPreview && <Link to={project.previewUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Preview</Link>}
                 </div>
               </div>
             </li>
