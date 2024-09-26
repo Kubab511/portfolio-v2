@@ -26,8 +26,8 @@ const projectData = [
     description: "My Leaving Cert computer science project",
     image: "/projects/3.webp",
     gitUrl: "https://github.com/Kubab511/lc-report-112081",
-    hasPreview: false,
-    previewUrl: ""
+    hasPreview: true,
+    previewUrl: "https://matura.barabasz.dev/"
   },
   {
     id: 4,
