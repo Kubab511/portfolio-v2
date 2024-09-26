@@ -12,6 +12,7 @@ export function Hero() {
               </span>
               <TypeAnimation
                 sequence={[
+                  500,
                   "Kuba"
                 ]}
                 wrapper="span"
