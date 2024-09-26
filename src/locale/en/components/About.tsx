@@ -14,7 +14,7 @@ const DATA = [
     )
   },
   {
-    title: "Educaiton",
+    title: "Education",
     id: "education",
     content: (
       <ul className="pl-2 list-disc" key={"education"}>
