@@ -1,18 +1,8 @@
-import { NavLink } from "react-router-dom"
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline"
+import { Link } from "react-router-dom"
 
 const projectData = [
   {
     id: 1,
-    title: "JBX Profiles",
-    description: "A simple website made in React TS",
-    image: "/projects/1.webp",
-    gitUrl: "https://github.com/Kubab511/jbx-profiles",
-    hasPreview: true,
-    previewUrl: "https://jbx-profiles.com/"
-  },
-  {
-    id: 2,
     title: "My portfolio",
     description: "My personal website made in React TS",
     image: "/projects/2.webp",
@@ -21,13 +11,22 @@ const projectData = [
     previewUrl: ""
   },
   {
-    id: 3,
+    id: 2,
     title: "Leaving Cert project",
     description: "My Leaving Cert computer science project",
     image: "/projects/3.webp",
     gitUrl: "https://github.com/Kubab511/lc-report-112081",
     hasPreview: true,
     previewUrl: "https://matura.barabasz.dev/"
+  },
+  {
+    id: 3,
+    title: "JBX Profiles",
+    description: "A simple website made in React TS",
+    image: "/projects/1.webp",
+    gitUrl: "https://github.com/Kubab511/jbx-profiles",
+    hasPreview: true,
+    previewUrl: "https://jbx-profiles.com/"
   },
   {
     id: 4,
@@ -43,43 +42,25 @@ const projectData = [
 export function Projects() {
   return (
     <>
-      <section id="projects">
-        <br />
-        <br />
-        <br />
-        <br />
+      <section id="projects" className="pt-24">
         <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
           Projects
         </h2>
-        <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
+        <ul className="grid lg:grid-cols-3 gap-8 md:gap-12 md:grid-cols-2 ">
           {projectData.map((project) => (
             <li className="flex flex-col justify-between" key={project.id}>
               <div
                 className="h-52 md:h-72 rounded-t-xl relative group border-4 border-[#181818]"
                 style={{ background: `url(${project.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
               >
-                <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
-                  <NavLink
-                    to={project.gitUrl}
-                    target="_blank"
-                    className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/NavLink"
-                  >
-                    <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/NavLink:text-white" />
-                  </NavLink>
-                  {project.hasPreview && (
-                    <NavLink
-                      to={project.previewUrl}
-                      target="_blank"
-                      className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/NavLink"
-                    >
-                      <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/NavLink:text-white" />
-                    </NavLink>
-                  )}
-                </div>
               </div>
-              <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 grow flex flex-col">
+              <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 grow flex flex-col relative pb-12">
                 <h5 className="text-2xl font-semibold mb-2 self-center">{project.title}</h5>
                 <p className="text-[#ADB7BE]">{project.description}</p>
+                <div className="flex justify-center absolute bottom-4 left-0 right-0 ">
+                  <Link to={project.gitUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Kod źródłowy</Link>
+                  {project.hasPreview && <Link to={project.gitUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Podgląd</Link>}
+                </div>
               </div>
             </li>
           ))}

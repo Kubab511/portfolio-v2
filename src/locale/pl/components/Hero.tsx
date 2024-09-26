@@ -12,16 +12,11 @@ export function Hero() {
               </span>
               <TypeAnimation
                 sequence={[
-                  "Kuba",
-                  1000,
-                  "Studentem",
-                  1000,
-                  "Programistą",
-                  1000
+                  "Kuba"
                 ]}
                 wrapper="span"
                 speed={50}
-                repeat={Infinity}
+                repeat={0}
               />
             </h1>
             <div>
