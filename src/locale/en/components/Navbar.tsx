@@ -7,6 +7,12 @@ export function Navbar() {
 
   useEffect(() => {
     const lang = localStorage.getItem("lang");
+
+    const element = document.getElementById("top");
+
+    if (element) {
+      element.scrollIntoView();
+    }
   
     if (lang === "pl") {
       navigate("/pl");

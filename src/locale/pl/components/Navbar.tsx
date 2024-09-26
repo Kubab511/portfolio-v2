@@ -1,10 +1,18 @@
 import Hamburger from "hamburger-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export function Navbar() {
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
+
+  useEffect(() => {
+    const element = document.getElementById("top");
+
+    if (element) {
+      element.scrollIntoView();
+    }
+  }, []);
 
   const setClose = () => {
     setOpen(false);
