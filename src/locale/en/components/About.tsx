@@ -7,8 +7,8 @@ const DATA = [
     id: "experience",
     content: (
       <ul className="pl-2 list-disc" key={"experience"}>
-        <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polish localization (2024)</li>
-        <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://zhp.ie/">Polish Scouting Association ZHP Irlandia</a> - Scout Leader (01/2022 - 02/2023)</li>
+        <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polish localization | 2024</li>
+        <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://zhp.ie/">Polish Scouting Association ZHP Irlandia</a> - Scout Leader | 01/2022 - 02/2023</li>
       </ul>
     )
   },
@@ -28,8 +28,8 @@ const DATA = [
     id: "education",
     content: (
       <ul className="pl-2 list-disc" key={"education"}>
-        <li>BSc Computer Science - TU Dublin - 2023-2027</li>
-        <li>Leaving Certificate - Malahide Community School - 2023</li>
+        <li>BSc Computer Science - TU Dublin | 2023-2027</li>
+        <li>Leaving Certificate - Malahide Community School | 2023</li>
       </ul>
     )
   },
