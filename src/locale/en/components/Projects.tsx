@@ -4,7 +4,11 @@ const projectData = [
   {
     id: 1,
     title: "My portfolio",
-    description: "My personal website made in React TS",
+    tech: [
+      {id: 1, src: "/tech/react-original.svg", alt: "React"},
+      {id: 2, src: "/tech/typescript-original.svg", alt: "TypeScript"},
+      {id: 3, src: "/tech/tailwindcss-original.svg", alt: "TailwindCSS"}
+    ],
     image: "/projects/2.webp",
     gitUrl: "https://github.com/Kubab511/portfolio-v2",
     hasPreview: false,
@@ -13,7 +17,11 @@ const projectData = [
   {
     id: 2,
     title: "Leaving Cert project",
-    description: "My Leaving Cert computer science project",
+    tech: [
+      {id: 1, src: "/tech/html5-original.svg", alt: "HTML"},
+      {id: 2, src: "/tech/javascript-original.svg", alt: "JS"},
+      {id: 3, src: "/tech/css3-original.svg", alt: "CSS"}
+    ],
     image: "/projects/3.webp",
     gitUrl: "https://github.com/Kubab511/lc-report-112081",
     hasPreview: true,
@@ -22,7 +30,11 @@ const projectData = [
   {
     id: 3,
     title: "JBX Profiles",
-    description: "A simple website made in React TS",
+    tech: [
+      {id: 1, src: "/tech/react-original.svg", alt: "React"},
+      {id: 2, src: "/tech/typescript-original.svg", alt: "TypeScript"},
+      {id: 3, src: "/tech/tailwindcss-original.svg", alt: "TailwindCSS"}
+    ],
     image: "/projects/1.webp",
     gitUrl: "https://github.com/Kubab511/jbx-profiles",
     hasPreview: true,
@@ -31,7 +43,9 @@ const projectData = [
   {
     id: 4,
     title: "JBot",
-    description: "A simple Discord bot for moderation and role management",
+    tech: [
+      {id: 1, src: "/tech/python-original.svg", alt: "Python"}
+    ],
     image: "/projects/4.webp",
     gitUrl: "https://github.com/Kubab511/discord-jbot",
     hasPreview: false,
@@ -56,7 +70,11 @@ export function Projects() {
               </div>
               <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 grow flex flex-col relative pb-12">
                 <h5 className="text-2xl font-semibold mb-2 self-center">{project.title}</h5>
-                <p className="text-[#ADB7BE]">{project.description}</p>
+                <div className="flex justify-center py-1">
+                  {project.tech.map((logo) => (
+                    <img className="h-8 px-2" src={logo.src} alt={logo.alt} key={logo.id} />
+                  ))}
+                </div>
                 <div className="flex justify-center absolute bottom-4 left-0 right-0 ">
                   <Link to={project.gitUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Source code</Link>
                   {project.hasPreview && <Link to={project.previewUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Preview</Link>}
