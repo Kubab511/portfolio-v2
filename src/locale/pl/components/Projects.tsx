@@ -5,9 +5,9 @@ const projectData = [
     id: 1,
     title: "Moje portfolio",
     tech: [
-      {id: 1, src: "/tech/react-original.svg", alt: "React"},
-      {id: 2, src: "/tech/typescript-original.svg", alt: "TypeScript"},
-      {id: 3, src: "/tech/tailwindcss-original.svg", alt: "TailwindCSS"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React"},
+      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript"},
+      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "TailwindCSS"}
     ],
     image: "/projects/2.webp",
     gitUrl: "https://github.com/Kubab511/portfolio-v2",
@@ -18,9 +18,9 @@ const projectData = [
     id: 2,
     title: "Projekt maturalny",
     tech: [
-      {id: 1, src: "/tech/html5-original.svg", alt: "HTML"},
-      {id: 2, src: "/tech/javascript-original.svg", alt: "JS"},
-      {id: 3, src: "/tech/css3-original.svg", alt: "CSS"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", alt: "HTML"},
+      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", alt: "JS"},
+      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", alt: "CSS"}
     ],
     image: "/projects/3.webp",
     gitUrl: "https://github.com/Kubab511/lc-report-112081",
@@ -31,9 +31,9 @@ const projectData = [
     id: 3,
     title: "JBX Profiles",
     tech: [
-      {id: 1, src: "/tech/react-original.svg", alt: "React"},
-      {id: 2, src: "/tech/typescript-original.svg", alt: "TypeScript"},
-      {id: 3, src: "/tech/tailwindcss-original.svg", alt: "TailwindCSS"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React"},
+      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript"},
+      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "TailwindCSS"}
     ],
     image: "/projects/1.webp",
     gitUrl: "https://github.com/Kubab511/jbx-profiles",
@@ -44,7 +44,7 @@ const projectData = [
     id: 4,
     title: "JBot",
     tech: [
-      {id: 1, src: "/tech/python-original.svg", alt: "Python"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", alt: "Python"}
     ],
     image: "/projects/4.webp",
     gitUrl: "https://github.com/Kubab511/discord-jbot",
