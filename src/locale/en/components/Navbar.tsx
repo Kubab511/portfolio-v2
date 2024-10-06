@@ -7,7 +7,6 @@ export function Navbar() {
 
   useEffect(() => {
     const lang = localStorage.getItem("lang");
-
     const element = document.getElementById("top");
 
     if (element) {
@@ -75,10 +74,9 @@ export function Navbar() {
     <div className="fixed mx-auto border border-[#484b6a] border-t-transparent border-l-transparent border-r-transparent top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <div className="flex items-center flex-row">
-        <button onClick={scrollToTop}>
-            <img src="/favicon.webp" alt="Logo" className="h-10 w-10"/>
+          <button onClick={scrollToTop}>
+            <h1 className="text-[#ADB7BE] text-4xl pl-2 hidden md:block select-none">Jakub Barabasz</h1>
           </button> 
-          <h1 className="text-[#ADB7BE] text-4xl pl-2 hidden md:block select-none">Jakub Barabasz</h1>
         </div>
         <div className="menu hidden md:block md:w-auto">
           <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
