@@ -44,7 +44,7 @@ const projectData = [
     id: 4,
     title: "JBot",
     tech: [
-      {id: 1, src: "/tech/python-original.svg", alt: "Python"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", alt: "Python"}
     ],
     image: "/projects/4.webp",
     gitUrl: "https://github.com/Kubab511/discord-jbot",
