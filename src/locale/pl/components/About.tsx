@@ -13,13 +13,11 @@ const DATA = [
     )
   },
   {
-    title: "Umiejętności",
-    id: "skills",
+    title: "Certyfikaty",
+    id: "certificates",
     content: (
       <ul className="pl-2 list-disc" key={"skills"}>
-        <li>Python</li>
-        <li>C</li>
-        <li>TypeScript</li>
+        <li>Cisco CCNAv7: Introduction to Networks</li>
       </ul>
     )
   },
@@ -82,11 +80,11 @@ export function About() {
             Doświadczenie
             </Button>
             <Button
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("certificates")}
+              active={tab === "certificates"}
             >
               {" "}
-              Umiejętności
+              Certyfikaty
             </Button>
             <Button
               selectTab={() => handleTabChange("education")}
