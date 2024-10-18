@@ -5,9 +5,9 @@ const projectData = [
     id: 1,
     title: "Moje portfolio",
     tech: [
-      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React"},
-      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript"},
-      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "TailwindCSS"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React", name: "React"},
+      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript", name: "TypeScript"},
+      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "TailwindCSS", name: "TailwindCSS"}
     ],
     image: "/projects/2.webp",
     gitUrl: "https://github.com/Kubab511/portfolio-v2",
@@ -18,9 +18,9 @@ const projectData = [
     id: 2,
     title: "Projekt maturalny",
     tech: [
-      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", alt: "HTML"},
-      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", alt: "JS"},
-      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", alt: "CSS"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", alt: "HTML", name: "HTML"},
+      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", alt: "JS", name: "JavaScript"},
+      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", alt: "CSS", name: "CSS"}
     ],
     image: "/projects/3.webp",
     gitUrl: "https://github.com/Kubab511/lc-report-112081",
@@ -31,9 +31,9 @@ const projectData = [
     id: 3,
     title: "JBX Profiles",
     tech: [
-      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React"},
-      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript"},
-      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "TailwindCSS"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", alt: "React", name: "React"},
+      {id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", alt: "TypeScript", name: "TypeScript"},
+      {id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", alt: "TailwindCSS", name: "TailwindCSS"}
     ],
     image: "/projects/1.webp",
     gitUrl: "https://github.com/Kubab511/jbx-profiles",
@@ -44,7 +44,7 @@ const projectData = [
     id: 4,
     title: "JBot",
     tech: [
-      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", alt: "Python"}
+      {id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", alt: "Python", name: "Python"},
     ],
     image: "/projects/4.webp",
     gitUrl: "https://github.com/Kubab511/discord-jbot",
@@ -72,7 +72,10 @@ export function Projects() {
                 <h5 className="text-2xl font-semibold mb-2 self-center">{project.title}</h5>
                 <div className="flex justify-center py-1">
                   {project.tech.map((logo) => (
-                    <img className="h-8 px-2" src={logo.src} alt={logo.alt} key={logo.id} />
+                    <div className="flex flex-col">
+                      <img className="h-8 px-2" src={logo.src} alt={logo.alt} key={logo.id} />
+                      <p className="text-sm px-2 text-[#ADB7BE] select-none">{logo.name}</p>
+                    </div>
                   ))}
                 </div>
                 <div className="flex justify-center absolute bottom-4 left-0 right-0 ">
