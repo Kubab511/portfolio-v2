@@ -9,7 +9,7 @@ import "@radix-ui/themes/styles.css";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Theme hasBackground={false} accentColor='blue' radius='large' grayColor='gray'>
+      <Theme hasBackground={false} accentColor="blue" radius="large" grayColor="gray" appearance="dark">
         <App />
       </Theme>
     </BrowserRouter>
