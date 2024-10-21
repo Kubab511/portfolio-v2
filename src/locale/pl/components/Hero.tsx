@@ -1,6 +1,28 @@
+import { Button, Flex } from "@radix-ui/themes";
+import { FileDown, Github, Instagram, Linkedin, MailPlus } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 export function Hero() {
+  function handleMailClick() {
+    window.location.href = "mailto:barabasz.kuba@gmail.com";
+  }
+
+  function handleCvClick() {
+    window.open("/resume_pl.pdf", "_blank");
+  }
+
+  function handleGithubClick() {
+    window.open("https://github.com/Kubab511", "_blank");
+  }
+
+  function handleInstagramClick() {
+    window.open("https://www.instagram.com/kuba_barabasz/", "_blank");
+  }
+
+  function handleLinkedInClick() {
+    window.open("https://www.linkedin.com/in/kuba-barabasz/", "_blank");
+  }
+
   return (
     <>
       <section className="lg:py-16">
@@ -20,14 +42,27 @@ export function Hero() {
                 repeat={0}
               />
             </h1>
-            <div>
-              <a className="px-6 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-sky-500 to-green-600 hover:from-sky-700 hover:to-green-800 text-white" target="_blank" href="mailto:barabasz.kuba@gmail.com">Napisz do mnie</a>
-              <a className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-sky-500 to-green-600 hover:bg-slate-800 text-white mt-3" target="_blank" href="/resume_pl.pdf">
-                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3">
-                  Pobierz CV
-                </span>
-              </a>
-            </div>
+            <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
+              <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
+                <Button variant="soft" onClick={() => handleMailClick()}>
+                  <MailPlus /> Napisz do mnie
+                </Button>
+                <Button variant="outline" onClick={() => handleCvClick()}>
+                  <FileDown /> Pobierz CV
+                </Button>
+              </Flex>
+              <Flex gap="3" align="center">
+                <Button variant="ghost" onClick={() => handleGithubClick()}>
+                  <Github />
+                </Button>
+                <Button variant="ghost" onClick={() => handleInstagramClick()}>
+                  <Instagram />
+                </Button>
+                <Button variant="ghost" onClick={() => handleLinkedInClick()}>
+                  <Linkedin />
+                </Button>
+              </Flex>
+            </Flex>
           </div>
           <div className="col-span-4 place-self-center mt-4 ml-0 sm:ml-8 lg:mt-0 rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <img className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/avatar.webp" alt="Hero Image"/>

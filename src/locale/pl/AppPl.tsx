@@ -1,7 +1,6 @@
 import { About } from "./components/About"
 import { Footer } from "./components/Footer"
 import { Hero } from "./components/Hero"
-import { More } from "./components/More"
 import { Navbar } from "./components/Navbar"
 import { Projects } from "./components/Projects"
 
@@ -14,7 +13,6 @@ function AppPl() {
           <Hero />
           <About />
           <Projects />
-          <More />
         </div>
         <Footer />
       </div>
