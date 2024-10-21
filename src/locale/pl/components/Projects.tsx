@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Flex, Button } from "@radix-ui/themes"
+import { Eye, Github } from "lucide-react"
 
 const projectData = [
   {
@@ -54,6 +55,10 @@ const projectData = [
 ]
 
 export function Projects() {
+  function handleButtonClick(url: string) {
+    window.open(url, "_blank")
+  }
+
   return (
     <>
       <section id="projects" className=" pt-24">
@@ -70,7 +75,7 @@ export function Projects() {
               </div>
               <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 grow flex flex-col relative pb-12">
                 <h5 className="text-2xl font-semibold mb-2 self-center">{project.title}</h5>
-                <div className="flex justify-center py-1">
+                <div className="flex justify-center py-1 mb-2">
                   {project.tech.map((logo) => (
                     <div className="flex flex-col" key={logo.id}>
                       <img className="h-8 px-2" src={logo.src} alt={logo.alt} key={logo.id} />
@@ -78,9 +83,11 @@ export function Projects() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center absolute bottom-4 left-0 right-0 ">
-                  <Link to={project.gitUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Kod źródłowy</Link>
-                  {project.hasPreview && <Link to={project.previewUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Podgląd</Link>}
+                <div className="absolute bottom-4 left-0 right-0">
+                  <Flex gap="2" justify="center">
+                    <Button variant="outline" onClick={() => handleButtonClick(project.gitUrl)}><Github />Kod źródłowy</Button>
+                    {project.hasPreview && <Button variant="outline" onClick={() => handleButtonClick(project.previewUrl)}><Eye />Podgląd</Button>}
+                  </Flex>
                 </div>
               </div>
             </li>

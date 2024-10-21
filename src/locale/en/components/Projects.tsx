@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Flex, Button } from "@radix-ui/themes"
+import { Eye, Github } from "lucide-react"
 
 const projectData = [
   {
@@ -54,6 +55,10 @@ const projectData = [
 ]
 
 export function Projects() {
+  function handleButtonClick(url: string) {
+    window.open(url, "_blank")
+  }
+
   return (
     <>
       <section id="projects" className="pt-24">
@@ -78,9 +83,11 @@ export function Projects() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center absolute bottom-4 left-0 right-0 ">
-                  <Link to={project.gitUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Source code</Link>
-                  {project.hasPreview && <Link to={project.previewUrl} target="_blank" className="text-[#ADB7BE] hover:text-white underline p-2 pb-0">Preview</Link>}
+                <div className="absolute bottom-4 left-0 right-0">
+                  <Flex gap="2" justify="center">
+                    <Button variant="outline" onClick={() => handleButtonClick(project.gitUrl)}><Github />Kod źródłowy</Button>
+                    {project.hasPreview && <Button variant="outline" onClick={() => handleButtonClick(project.previewUrl)}><Eye />Podgląd</Button>}
+                  </Flex>
                 </div>
               </div>
             </li>

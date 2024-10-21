@@ -3,24 +3,8 @@ import { FileDown, Github, Instagram, Linkedin, MailPlus } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 export function Hero() {
-  function handleMailClick() {
-    window.location.href = "mailto:barabasz.kuba@gmail.com";
-  }
-
-  function handleCvClick() {
-    window.open("/resume_pl.pdf", "_blank");
-  }
-
-  function handleGithubClick() {
-    window.open("https://github.com/Kubab511", "_blank");
-  }
-
-  function handleInstagramClick() {
-    window.open("https://www.instagram.com/kuba_barabasz/", "_blank");
-  }
-
-  function handleLinkedInClick() {
-    window.open("https://www.linkedin.com/in/kuba-barabasz/", "_blank");
+  function handleButtonClick(url: string) {
+    window.open(url, "_blank")
   }
 
   return (
@@ -44,21 +28,21 @@ export function Hero() {
             </h1>
             <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
               <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
-                <Button variant="soft" onClick={() => handleMailClick()}>
+                <Button variant="soft" onClick={() => handleButtonClick("mailto:barabasz.kuba@gmail.com")}>
                   <MailPlus /> Napisz do mnie
                 </Button>
-                <Button variant="outline" onClick={() => handleCvClick()}>
+                <Button variant="outline" onClick={() => handleButtonClick("/resume_pl.pdf")}>
                   <FileDown /> Pobierz CV
                 </Button>
               </Flex>
               <Flex gap="3" align="center">
-                <Button variant="ghost" onClick={() => handleGithubClick()}>
+                <Button variant="ghost" onClick={() => handleButtonClick("https://github.com/Kubab511")}>
                   <Github />
                 </Button>
-                <Button variant="ghost" onClick={() => handleInstagramClick()}>
+                <Button variant="ghost" onClick={() => handleButtonClick("https://www.instagram.com/kuba_barabasz/")}>
                   <Instagram />
                 </Button>
-                <Button variant="ghost" onClick={() => handleLinkedInClick()}>
+                <Button variant="ghost" onClick={() => handleButtonClick("https://www.linkedin.com/in/kuba-barabasz/")}>
                   <Linkedin />
                 </Button>
               </Flex>
