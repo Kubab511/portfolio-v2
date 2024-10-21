@@ -72,7 +72,7 @@ export function Projects() {
                 <h5 className="text-2xl font-semibold mb-2 self-center">{project.title}</h5>
                 <div className="flex justify-center py-1">
                 {project.tech.map((logo) => (
-                    <div className="flex flex-col">
+                    <div className="flex flex-col" key={logo.id}>
                       <img className="h-8 px-2" src={logo.src} alt={logo.alt} key={logo.id} />
                       <p className="text-sm px-2 text-[#ADB7BE] select-none">{logo.name}</p>
                     </div>
