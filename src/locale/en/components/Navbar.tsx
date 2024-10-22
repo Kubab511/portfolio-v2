@@ -76,6 +76,7 @@ export function Navbar() {
         <div className="flex items-center flex-row">
           <button onClick={scrollToTop}>
             <h1 className="text-[#ADB7BE] text-4xl pl-2 hidden md:block select-none">Jakub Barabasz</h1>
+            <img src="/favicon.webp" className="w-10 h-10 md:hidden"/>
           </button> 
         </div>
         <div className="menu hidden md:block md:w-auto">

@@ -34,7 +34,7 @@ export function Hero() {
                 <Button variant="soft" onClick={() => handleButtonClick("mailto:barabasz.kuba@gmail.com")}>
                   <MailPlus /> Email me
                 </Button>
-                <Button variant="outline" onClick={() => handleButtonClick("/resume_pl.pdf")}>
+                <Button variant="outline" onClick={() => handleButtonClick("/resume.pdf")}>
                   <FileDown /> Download CV
                 </Button>
               </Flex>

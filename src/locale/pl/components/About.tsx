@@ -71,7 +71,7 @@ export function About() {
             <p className="text-slate-400 lg:text-lg">
               Jestem Kuba, 19-letni student informatyki na TU Dublin. Uczę się informatyki od liceum, gdzie otrzymałem nagrodę dla najlepszego ucznia informatyki. W wolnym czasie lubię chodzić po górach, robić zdjęcia i jeździć na nartach.
             </p>
-            <div className="mt-2 flex flex-col items-center justify-center sm:flex-row">
+            <div className="mt-2 flex items-center justify-center flex-wrap flex-row">
             <Button
               selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}
