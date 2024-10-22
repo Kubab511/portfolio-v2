@@ -85,8 +85,8 @@ export function Projects() {
                 </div>
                 <div className="absolute bottom-4 left-0 right-0">
                   <Flex gap="2" justify="center">
-                    <Button variant="outline" onClick={() => handleButtonClick(project.gitUrl)}><Github />Kod źródłowy</Button>
-                    {project.hasPreview && <Button variant="outline" onClick={() => handleButtonClick(project.previewUrl)}><Eye />Podgląd</Button>}
+                    <Button variant="outline" onClick={() => handleButtonClick(project.gitUrl)}><Github />Source Code</Button>
+                    {project.hasPreview && <Button variant="outline" onClick={() => handleButtonClick(project.previewUrl)}><Eye />Preview</Button>}
                   </Flex>
                 </div>
               </div>
