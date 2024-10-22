@@ -11,8 +11,8 @@ export function Hero() {
     <>
       <section className="lg:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-12">
-          <div className="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start">
-            <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+          <div className="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start rounded-xl border-2 border-[#484b6a] p-4">
+            <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-green-600">
                 Cześć, jestem<br/>
               </span>
@@ -26,6 +26,9 @@ export function Hero() {
                 repeat={0}
               />
             </h1>
+            <p className="text-slate-400 lg:text-lg mb-4">
+              &#128205; Dublin, Irlandia
+            </p>
             <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
               <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
                 <Button variant="soft" onClick={() => handleButtonClick("mailto:barabasz.kuba@gmail.com")}>
