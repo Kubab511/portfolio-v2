@@ -79,7 +79,7 @@ export function Projects() {
                 {project.tech.map((logo) => (
                     <div className="flex flex-col" key={logo.id}>
                       <img className="h-8 px-2" src={logo.src} alt={logo.alt} key={logo.id} />
-                      <p className="text-sm px-2 text-[#ADB7BE] select-none">{logo.name}</p>
+                      <p className="text-sm px-2 text-[#ADB7BE] select-none text-center">{logo.name}</p>
                     </div>
                   ))}
                 </div>
