@@ -26,7 +26,7 @@ export function Hero() {
                 repeat={0}
               />
             </h1>
-            <p className="text-slate-400 lg:text-lg mb-4">
+            <p className="text-slate-400 lg:text-lg mb-4">  
               &#128205; Dublin, Irlandia
             </p>
             <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">

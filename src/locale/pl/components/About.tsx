@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Button } from "./Button";
+import { Button } from "../../common/Button";
 
 const DATA = [
   {
@@ -7,8 +7,8 @@ const DATA = [
     id: "experience",
     content: (
       <ul className="pl-2 list-disc" key={"experience"}>
-        <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polskie tłumaczenie | 2024</li>
-        <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://zhp.ie/">ZHP Irlandia</a> - Drużynowy | 01.2022 - 02.2023</li>
+        <li><a target="_blank" className="underline text-slate-400 hover:text-accent" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polskie tłumaczenie | 2024</li>
+        <li><a target="_blank" className="underline text-slate-400 hover:text-accent" href="https://zhp.ie/">ZHP Irlandia</a> - Drużynowy | 01.2022 - 02.2023</li>
       </ul>
     )
   },
@@ -72,34 +72,34 @@ export function About() {
               Jestem Kuba, 19-letni student informatyki na TU Dublin. Uczę się informatyki od liceum, gdzie otrzymałem nagrodę dla najlepszego ucznia informatyki. W wolnym czasie lubię chodzić po górach, robić zdjęcia i jeździć na nartach.
             </p>
             <div className="mt-2 flex items-center justify-center flex-wrap flex-row">
-            <Button
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "experience"}
-            >
-              {" "}
-            Doświadczenie
-            </Button>
-            <Button
-              selectTab={() => handleTabChange("certificates")}
-              active={tab === "certificates"}
-            >
-              {" "}
-              Certyfikaty
-            </Button>
-            <Button
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Wykształcenie
-            </Button>
-            <Button
-              selectTab={() => handleTabChange("languages")}
-              active={tab === "languages"}
-            >
-              {" "}
-              Języki
-            </Button>
+              <Button
+                selectTab={() => handleTabChange("experience")}
+                active={tab === "experience"}
+              >
+                {" "}
+              Doświadczenie
+              </Button>
+              <Button
+                selectTab={() => handleTabChange("certificates")}
+                active={tab === "certificates"}
+              >
+                {" "}
+                Certyfikaty
+              </Button>
+              <Button
+                selectTab={() => handleTabChange("education")}
+                active={tab === "education"}
+              >
+                {" "}
+                Wykształcenie
+              </Button>
+              <Button
+                selectTab={() => handleTabChange("languages")}
+                active={tab === "languages"}
+              >
+                {" "}
+                Języki
+              </Button>
             </div>
             <div className="mt-8">
               {filteredData.map((item) => (

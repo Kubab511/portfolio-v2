@@ -73,16 +73,16 @@ export function Navbar() {
         </div>
         <div className="menu hidden md:block md:w-auto">
           <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-            <button onClick={() => scrollToElement("about")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0  hover:text-white hover:cursor-pointer"}>
+            <button onClick={() => scrollToElement("about")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
               O mnie
             </button>
-            <button onClick={() => scrollToElement("projects")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0  hover:text-white hover:cursor-pointer"}>
+            <button onClick={() => scrollToElement("projects")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
               Projekty
             </button>
             <p className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 select-none"}>
               |
             </p>
-            <NavLink to="/" onClick={scrollToTopLangChange} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0  hover:text-white hover:cursor-pointer"}>
+            <NavLink to="/" onClick={scrollToTopLangChange} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:cursor-pointer"}>
               <img src="/flags/uk.png" className="w-8 h-5 rounded"/>
             </NavLink>
           </ul>
@@ -93,13 +93,13 @@ export function Navbar() {
       </div>
       {isOpen && (
         <ul className="flex flex-col py-4 items-center">
-          <button onClick={() => scrollToElementMobile("about")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer"}>
+          <button onClick={() => scrollToElementMobile("about")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
             O mnie
           </button>
-          <button onClick={() => scrollToElementMobile("projects")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer"}>
+          <button onClick={() => scrollToElementMobile("projects")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
             Projekty
           </button>
-          <NavLink to="/" onClick={scrollToTopLangChangeMobile} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white hover:cursor-pointer"}>
+          <NavLink to="/" onClick={scrollToTopLangChangeMobile} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:cursor-pointer"}>
             <img src="/flags/uk.png" className="w-8 h-5 rounded"/>
           </NavLink>
         </ul>

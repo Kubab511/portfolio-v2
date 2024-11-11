@@ -23,7 +23,7 @@ export function Button({ active, selectTab, children }: Item) {
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-sky-500 mr-3"
+        className="h-1 bg-outline-blue mr-3"
       />
     </button>
   )

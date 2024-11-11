@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Button } from "./Button";
+import { Button } from "../../common/Button";
 
 const DATA = [
   {
@@ -7,8 +7,8 @@ const DATA = [
     id: "experience",
     content: (
       <ul className="pl-2 list-disc" key={"experience"}>
-        <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polish localization | 2024</li>
-        <li><a target="_blank" className="underline text-slate-400 hover:text-white" href="https://zhp.ie/">Polish Scouting Association ZHP Irlandia</a> - Scout Leader | 01/2022 - 02/2023</li>
+        <li><a target="_blank" className="underline text-slate-400 hover:text-accent" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polish localization | 2024</li>
+        <li><a target="_blank" className="underline text-slate-400 hover:text-accent" href="https://zhp.ie/">Polish Scouting Association ZHP Irlandia</a> - Scout Leader | 01/2022 - 02/2023</li>
       </ul>
     )
   },
@@ -72,34 +72,34 @@ export function About() {
               I&apos;m Kuba, a 19 year old computer science student at TU Dublin. I&apos;ve been learning computer science since high school where I received an award for the year&apos;s top computer science student. In my free time I enjoy hiking, photography and skiing.
             </p>
             <div className="mt-2 flex flex-col items-center justify-center flex-wrap sm:flex-row">
-            <Button
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "experience"}
-            >
-              {" "}
-              Experience
-            </Button>
-            <Button
-              selectTab={() => handleTabChange("certificates")}
-              active={tab === "certificates"}
-            >
-              {" "}
-              Certificates
-            </Button>
-            <Button
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education
-            </Button>
-            <Button
-              selectTab={() => handleTabChange("languages")}
-              active={tab === "languages"}
-            >
-              {" "}
-              Languages
-            </Button>
+              <Button
+                selectTab={() => handleTabChange("experience")}
+                active={tab === "experience"}
+              >
+                {" "}
+                Experience
+              </Button>
+              <Button
+                selectTab={() => handleTabChange("certificates")}
+                active={tab === "certificates"}
+              >
+                {" "}
+                Certificates
+              </Button>
+              <Button
+                selectTab={() => handleTabChange("education")}
+                active={tab === "education"}
+              >
+                {" "}
+                Education
+              </Button>
+              <Button
+                selectTab={() => handleTabChange("languages")}
+                active={tab === "languages"}
+              >
+                {" "}
+                Languages
+              </Button>
             </div>
             <div className="mt-8">
               {filteredData.map((item) => (
