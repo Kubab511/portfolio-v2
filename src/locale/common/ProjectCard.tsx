@@ -1,5 +1,6 @@
 import { Flex, Button } from "@radix-ui/themes"
 import { Eye, Github } from "lucide-react"
+import { useLocation } from "react-router"
 
 type ProjectCardProps = {
   project: {
@@ -14,7 +15,7 @@ type ProjectCardProps = {
     }[],
     gitUrl: string,
     previewUrl: string,
-    hasPreview: boolean
+    hasPreview: boolean,
   }
 }
 
@@ -22,6 +23,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
   function handleButtonClick(url: string) {
     window.open(url, "_blank")
   }
+
+  const location = useLocation();
+  let strings: string[] = []
+
+  location.pathname == "/pl" ? strings = ["Kod źródłowy", "Podgląd",] : strings = ["Source code", "Preview"]
 
   return (
     <li className="flex flex-col justify-between" key={project.id}>
@@ -42,8 +48,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
         <div className="absolute bottom-3 left-0 right-0">
           <Flex gap="2" justify="center">
-            <Button variant="outline" onClick={() => handleButtonClick(project.gitUrl)}><Github />Kod źródłowy</Button>
-            {project.hasPreview && <Button variant="outline" onClick={() => handleButtonClick(project.previewUrl)}><Eye />Podgląd</Button>}
+            <Button variant="outline" onClick={() => handleButtonClick(project.gitUrl)}><Github />{strings[0]}</Button>
+            {project.hasPreview && <Button variant="outline" onClick={() => handleButtonClick(project.previewUrl)}><Eye />{strings[1]}</Button>}
           </Flex>
         </div>
       </div>
