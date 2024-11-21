@@ -69,7 +69,7 @@ export function About() {
               About Me
             </h2>
             <p className="text-slate-400 lg:text-lg">
-              I&apos;m Kuba, a 19 year old computer science student at TU Dublin. I&apos;ve been learning computer science since high school where I received an award for the year&apos;s top computer science student. In my free time I enjoy hiking, photography and skiing.
+              I&apos;m Kuba, a 20 year old computer science student at TU Dublin. I&apos;ve been learning computer science since high school where I received an award for the year&apos;s top computer science student. In my free time I enjoy hiking, photography and skiing.
             </p>
             <div className="mt-2 flex flex-col items-center justify-center flex-wrap sm:flex-row">
               <Button
