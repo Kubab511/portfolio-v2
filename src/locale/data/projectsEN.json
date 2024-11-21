@@ -17,7 +17,7 @@
     {
       "id": 2,
       "title": "Leaving Cert project",
-      "description": "Leaving Cert project in computer science, which aimed to recreate a game and document it in a static HTML website.",
+      "description": "My Leaving Cert computer science project, which aimed to recreate a game and document it in a static HTML website.",
       "tech": [
         {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", "alt": "HTML", "name": "HTML"},
         {"id": 2, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", "alt": "JS", "name": "JavaScript"},

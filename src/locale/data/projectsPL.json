@@ -17,7 +17,7 @@
     {
       "id": 2,
       "title": "Projekt maturalny",
-      "description": "Projekt maturalny z informatyki, który miał na celu stworzenie strony internetowej z użyciem HTML, CSS oraz JavaScript.",
+      "description": "Mój projekt maturalny z informatyki, który miał na celu stworzenie strony internetowej z użyciem HTML, CSS oraz JavaScript.",
       "tech": [
         {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", "alt": "HTML", "name": "HTML"},
         {"id": 2, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", "alt": "JS", "name": "JavaScript"},
