@@ -42,12 +42,12 @@ export function Hero() {
                 <Button variant="ghost" onClick={() => handleButtonClick("https://github.com/Kubab511")}>
                   <Github />
                 </Button>
-                <Button variant="ghost" onClick={() => handleButtonClick("https://www.instagram.com/kuba_barabasz/")}>
-                  <Instagram />
-                </Button>
                 <Button variant="ghost" onClick={() => handleButtonClick("https://www.linkedin.com/in/kuba-barabasz/")}>
                   <Linkedin />
                 </Button>
+                <Button variant="ghost" onClick={() => handleButtonClick("https://www.instagram.com/kuba_barabasz/")}>
+                  <Instagram />
+                </Button>   
               </Flex>
             </Flex>
           </div>
