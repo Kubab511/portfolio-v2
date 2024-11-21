@@ -27,6 +27,9 @@ export function Hero() {
               />
             </h1>
             <p className="text-slate-400 lg:text-lg mb-4">
+              2<sup>nd</sup> year Computer Science student
+            </p>
+            <p className="text-slate-400 lg:text-lg mb-4">
               &#128205; Dublin, Ireland
             </p>
             <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
