@@ -53,6 +53,18 @@
       "gitUrl": "https://github.com/Kubab511/discord-jbot",
       "hasPreview": false,
       "previewUrl": ""
+    },
+    {
+      "id": 5,
+      "title": "Microprocessors Project",
+      "description": "A simple game for the Nucleo l031k6 board which consists of collecting packages with a van, each package collected adds to the time remaining, the time added decreases as the score goes up. You lose when you run out of time.",
+      "tech": [
+        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg", "alt": "C", "name": "C"}
+      ],
+      "image": "/projects/5.webp",
+      "gitUrl": "https://github.com/Kubab511/game_project",
+      "hasPreview": true,
+      "previewUrl": "https://youtu.be/RotdXScn5rw"
     }
   ]
 }

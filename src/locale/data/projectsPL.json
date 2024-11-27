@@ -53,6 +53,18 @@
       "gitUrl": "https://github.com/Kubab511/discord-jbot",
       "hasPreview": false,
       "previewUrl": ""
+    },
+    {
+      "id": 5,
+      "title": "Projekt z mikroprocesorów",
+      "description": "Prosta gra na płytce Nucleo l031k6, która polega na zbieraniu paczek furgonetką, każda zebrana paczka dodaje do pozostałego czasu, czas dodawany zmniejsza się wraz ze wzrostem wyniku. Przegrywasz, gdy skończy ci się czas.",
+      "tech": [
+        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg", "alt": "C", "name": "C"}
+      ],
+      "image": "/projects/5.webp",
+      "gitUrl": "https://github.com/Kubab511/game_project",
+      "hasPreview": true,
+      "previewUrl": "https://youtu.be/RotdXScn5rw"
     }
   ]
 }
