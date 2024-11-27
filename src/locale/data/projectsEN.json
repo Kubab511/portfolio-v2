@@ -65,6 +65,19 @@
       "gitUrl": "https://github.com/Kubab511/game_project",
       "hasPreview": true,
       "previewUrl": "https://youtu.be/RotdXScn5rw"
+    },
+    {
+      "id": 6,
+      "title": "Licensing Server",
+      "description": "A simple server written in ExpressJS, which serves to authenticate the user in the installer based on the saved username and password hash. The server returns an encrypted username, which is saved in one of the installed files to prevent illegal distribution of the product.",
+      "tech": [
+        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg", "alt": "Node", "name": "Node JS"},
+        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg", "alt": "Express", "name": "Express"}
+      ],
+      "image": "/projects/6.webp",
+      "gitUrl": "https://github.com/Kubab511/licensing-server",
+      "hasPreview": false,
+      "previewUrl": ""
     }
   ]
 }
