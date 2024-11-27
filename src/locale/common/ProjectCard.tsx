@@ -1,6 +1,3 @@
-// import { Flex, Button } from "@radix-ui/themes"
-// import { Eye, Github } from "lucide-react"
-// import { useLocation } from "react-router"
 import { DialogBox } from "./DialogBox"
 
 type ProjectCardProps = {
@@ -22,15 +19,6 @@ type ProjectCardProps = {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  // function handleButtonClick(url: string) {
-  //   window.open(url, "_blank");
-  // }
-
-  // const location = useLocation();
-  // let strings: string[] = [];
-
-  // location.pathname == "/pl" ? strings = ["Kod źródłowy", "Podgląd",] : strings = ["Source code", "Preview"]
-
   return (
     <li className="flex flex-col justify-between" key={project.id}>
       <div
