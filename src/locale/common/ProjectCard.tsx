@@ -1,6 +1,3 @@
-// import { Flex, Button } from "@radix-ui/themes"
-// import { Eye, Github } from "lucide-react"
-// import { useLocation } from "react-router"
 import { DialogBox } from "./DialogBox"
 
 type ProjectCardProps = {
