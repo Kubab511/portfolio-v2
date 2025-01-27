@@ -41,43 +41,6 @@
       "gitUrl": "https://github.com/Kubab511/jbx-profiles",
       "hasPreview": true,
       "previewUrl": "https://jbx-profiles.com/"
-    },
-    {
-      "id": 4,
-      "title": "JBot",
-      "description": "A simple Discord bot that aims to help manage a server. Created in Python using the discord.py library.",
-      "tech": [
-        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", "alt": "Python", "name": "Python"}
-      ],
-      "image": "/projects/4.webp",
-      "gitUrl": "https://github.com/Kubab511/discord-jbot",
-      "hasPreview": false,
-      "previewUrl": ""
-    },
-    {
-      "id": 5,
-      "title": "Microprocessors Project",
-      "description": "A simple game for the Nucleo l031k6 board which consists of collecting packages with a van, each package collected adds to the time remaining, the time added decreases as the score goes up. You lose when you run out of time.",
-      "tech": [
-        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg", "alt": "C", "name": "C"}
-      ],
-      "image": "/projects/5.webp",
-      "gitUrl": "https://github.com/Kubab511/game_project",
-      "hasPreview": true,
-      "previewUrl": "https://youtu.be/RotdXScn5rw"
-    },
-    {
-      "id": 6,
-      "title": "Licensing Server",
-      "description": "A simple server written in ExpressJS, which serves to authenticate the user in the installer based on the saved username and password hash. The server returns an encrypted username, which is saved in one of the installed files to prevent illegal distribution of the product.",
-      "tech": [
-        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg", "alt": "Node", "name": "Node JS"},
-        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg", "alt": "Express", "name": "Express"}
-      ],
-      "image": "/projects/6.webp",
-      "gitUrl": "https://github.com/Kubab511/licensing-server",
-      "hasPreview": false,
-      "previewUrl": ""
     }
   ]
 }
