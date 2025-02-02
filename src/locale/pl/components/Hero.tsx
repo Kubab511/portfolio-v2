@@ -44,9 +44,9 @@ export function Hero() {
               <Flex gap="3" align="center">
                 <Button variant="ghost" onClick={() => handleButtonClick("https://github.com/Kubab511")}>
                   <Github />
-                  <Button variant="ghost" onClick={() => handleButtonClick("https://www.linkedin.com/in/kuba-barabasz/")}>
-                  <Linkedin />
                 </Button>
+                <Button variant="ghost" onClick={() => handleButtonClick("https://www.linkedin.com/in/kuba-barabasz/")}>
+                  <Linkedin />
                 </Button>
                 <Button variant="ghost" onClick={() => handleButtonClick("https://www.instagram.com/kuba_barabasz/")}>
                   <Instagram />
