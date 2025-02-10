@@ -1,5 +1,5 @@
-import { ProjectCard } from "../../common/ProjectCard"
-import projectsENJSON from "../../data/projectsEN.json"
+import { ProjectCard } from "../../../common/ProjectCard"
+import projectsENJSON from "../../../data/projectsEN.json"
 
 export function Projects() {
   const projectData = projectsENJSON.projectData;

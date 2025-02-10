@@ -1,9 +1,9 @@
 import { About } from "./components/About"
-import { Footer } from "../common/Footer"
+import { Footer } from "../../common/Footer"
 import { Hero } from "./components/Hero"
 import { Navbar } from "./components/Navbar"
 import { Projects } from "./components/Projects"
-import { Technologies } from "../common/Technologies"
+import { Technologies } from "../../common/Technologies"
 
 function AppEn() {
   return(
@@ -12,8 +12,8 @@ function AppEn() {
         <Navbar />
         <div className="container mt-24 mx-auto px-12 py-4">
           <Hero />
-          <Technologies />
           <About />
+          <Technologies />
           <Projects />
         </div>
         <Footer />

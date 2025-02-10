@@ -1,5 +1,5 @@
-import { ProjectCard } from "../../common/ProjectCard"
-import projectsPLJSON from "../../data/projectsPL.json"
+import { ProjectCard } from "../../../common/ProjectCard"
+import projectsPLJSON from "../../../data/projectsPL.json"
 
 
 export function Projects() {

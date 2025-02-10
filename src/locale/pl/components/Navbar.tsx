@@ -76,6 +76,9 @@ export function Navbar() {
             <button onClick={() => scrollToElement("about")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
               O mnie
             </button>
+            <button onClick={() => scrollToElement("technologies")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
+              Technologie
+            </button>
             <button onClick={() => scrollToElement("projects")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
               Projekty
             </button>
@@ -95,6 +98,9 @@ export function Navbar() {
         <ul className="flex flex-col py-4 items-center">
           <button onClick={() => scrollToElementMobile("about")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
             O mnie
+          </button>
+          <button onClick={() => scrollToElementMobile("technologies")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
+            Technologie
           </button>
           <button onClick={() => scrollToElementMobile("projects")} className={"block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-accent hover:cursor-pointer"}>
             Projekty
