@@ -1,6 +1,7 @@
 import { Button, Flex } from "@radix-ui/themes";
 import { FileDown, Github, Instagram, Linkedin, MailPlus } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
+import { Weather } from "../../../common/Weather";
 
 export function Hero() {
   function handleButtonClick(url: string) {
@@ -32,6 +33,7 @@ export function Hero() {
             <p className="text-slate-400 lg:text-lg mb-4">
               &#128205; Dublin, Ireland
             </p>
+            <Weather />
             <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
               <Flex gap="3" direction={{initial: "column", sm: "row"}} align="center">
                 <Button variant="soft" onClick={() => handleButtonClick("mailto:barabasz.kuba@gmail.com")}>
