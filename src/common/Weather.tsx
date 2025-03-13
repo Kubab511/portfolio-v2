@@ -1,5 +1,6 @@
 import { useLocation } from "react-router";
 import useWeather from "../hooks/useWeather";
+import { ClipLoader } from "react-spinners";
 
 export function Weather() {
   const lang = useLocation().pathname === "/pl" ? "pl" : "en";
@@ -18,7 +19,10 @@ export function Weather() {
         </div>
       </div>
       ) : (
-      <p>{location.pathname === "/pl" ? "Ładowanie pogody..." : "Loading weather..."}</p>
+        <div className="flex items-center">
+          <ClipLoader color="#94a3b8" speedMultiplier={0.5} />
+          <p className="ml-4">{location.pathname === "/pl" ? "Ładowanie pogody..." : "Loading weather..."}</p>
+        </div>
       )}
     </div>
   )

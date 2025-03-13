@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Forecast } from "../types/Forecast";
 
-function useWeather(latitude: number, longitude: number, language: string, SIunit: string) {
+export default function useWeather(latitude: number, longitude: number, language: string, SIunit: string) {
   const [weather, setWeather] = useState<Forecast | null>();
   const requestUrl = "https://api.barabasz.dev/v1/getWeather"
   
@@ -19,5 +19,3 @@ function useWeather(latitude: number, longitude: number, language: string, SIuni
 
   return (weather);
 }
-
-export default useWeather;
