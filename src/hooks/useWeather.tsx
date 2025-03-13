@@ -4,7 +4,6 @@ import { Forecast } from "../types/Forecast";
 function useWeather(latitude: number, longitude: number, language: string, SIunit: string) {
   const [weather, setWeather] = useState<Forecast | null>();
   const requestUrl = "https://api.barabasz.dev/v1/getWeather"
-  // const requestUrl = "http://localhost:5000/v1/getWeather"
   
   
   useEffect(() => {
@@ -17,8 +16,6 @@ function useWeather(latitude: number, longitude: number, language: string, SIuni
       .then((res) => res.json())
       .then((data) => setWeather(data));
   }, [SIunit, language, latitude, longitude, requestUrl]);
-
-  console.log(weather)
 
   return (weather);
 }
