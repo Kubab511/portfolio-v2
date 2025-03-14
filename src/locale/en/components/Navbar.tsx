@@ -75,7 +75,7 @@ export function Navbar() {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <div className="flex items-center flex-row">
           <button onClick={scrollToTop}>
-            <h1 className="text-[#ADB7BE] text-4xl pl-2 hidden md:block select-none">Jakub Barabasz</h1>
+            <h1 className="text-[#ADB7BE] text-4xl pl-2 hidden md:block select-none m-0">Jakub Barabasz</h1>
             <img src="/favicon.webp" className="w-10 h-10 md:hidden"/>
           </button> 
         </div>

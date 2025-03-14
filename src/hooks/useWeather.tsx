@@ -1,21 +1,16 @@
 import { useEffect, useState } from "react";
 import { Forecast } from "../types/Forecast";
 
-export default function useWeather(latitude: number, longitude: number, language: string, SIunit: string) {
+export default function useWeather(lat: number, lon: number, lang: string, units: string) {
   const [weather, setWeather] = useState<Forecast | null>();
-  const requestUrl = "https://api.barabasz.dev/v1/getWeather"
+  const requestUrl = `https://api.barabasz.dev/v1/weather?lat=${lat}&lon=${lon}&lang=${lang}&${units}`
   
   
   useEffect(() => {
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ lat: latitude, lon: longitude, lang: language, units: SIunit })
-    }
-    fetch(requestUrl, requestOptions)
+    fetch(requestUrl)
       .then((res) => res.json())
       .then((data) => setWeather(data));
-  }, [SIunit, language, latitude, longitude, requestUrl]);
+  }, [lat, lon, lang, lang, requestUrl]);
 
   return (weather);
 }
