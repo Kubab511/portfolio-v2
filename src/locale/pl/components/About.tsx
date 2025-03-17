@@ -18,6 +18,7 @@ const DATA = [
     content: (
       <ul className="pl-2 list-disc" key={"skills"}>
         <li>Cisco CCNAv7: Introduction to Networks</li>
+        <li>Cisco CCNAv7: Switching, Routing, and Wireless Essentials</li>
       </ul>
     )
   },

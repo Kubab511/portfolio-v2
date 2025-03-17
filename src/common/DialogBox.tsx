@@ -1,16 +1,7 @@
 import { Dialog, Button, Flex } from "@radix-ui/themes";
 import { ChevronRight, Eye, Github } from "lucide-react";
 import { useLocation } from "react-router";
-
-type DialogBoxProps = {
-  project: {
-    title: string,
-    description: string,
-    gitUrl: string,
-    previewUrl: string,
-    hasPreview: boolean
-  }
-}
+import { DialogBoxProps } from "../types/DialogBoxProps";
 
 export function DialogBox({ project }: DialogBoxProps) {
   function handleButtonClick(url: string) {

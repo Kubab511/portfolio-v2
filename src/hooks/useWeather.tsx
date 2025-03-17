@@ -10,7 +10,7 @@ export default function useWeather(lat: number, lon: number, lang: string, units
     fetch(requestUrl)
       .then((res) => res.json())
       .then((data) => setWeather(data));
-  }, [lat, lon, lang, lang, requestUrl]);
+  }, [lat, lon, lang, units, requestUrl]);
 
   return (weather);
 }

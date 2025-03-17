@@ -4,7 +4,6 @@ import { ClipLoader } from "react-spinners";
 
 export function Weather() {
   const lang = useLocation().pathname === "/pl" ? "pl" : "en";
-
   const forecast = useWeather(53.35, -6.27, lang, "metric");
 
   return (
