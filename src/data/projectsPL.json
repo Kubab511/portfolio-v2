@@ -17,11 +17,12 @@
     {
       "id": 2,
       "title": "Projekt maturalny",
-      "description": "Mój projekt maturalny z informatyki, który miał na celu stworzenie strony internetowej z użyciem HTML, CSS oraz JavaScript.",
+      "description": "Mój projekt maturalny z informatyki, który miał na celu stworzenie gry w Pythonie i udokumentowanie jej za pomocą strony internetowej w HTMLu.",
       "tech": [
         {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg", "alt": "HTML", "name": "HTML"},
         {"id": 2, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", "alt": "JS", "name": "JavaScript"},
-        {"id": 3, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", "alt": "CSS", "name": "CSS"}
+        {"id": 3, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg", "alt": "CSS", "name": "CSS"},
+        {"id": 4, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", "alt": "Python", "name": "Python"}
       ],
       "image": "/projects/3.webp",
       "gitUrl": "https://github.com/Kubab511/lc-report-112081",
@@ -31,7 +32,7 @@
     {
       "id": 3,
       "title": "JBX Profiles",
-      "description": "Strona internetowa, uzywana do dystrybucji profilów do popularnego programu używanego razem z FS2020 o nazwie GSX. Stworzona w React z użyciem TypeScript oraz TailwindCSS.",
+      "description": "Strona internetowa, używana do dystrybucji profilów do popularnego programu używanego razem z FS2020 o nazwie GSX. Stworzona w React z użyciem TypeScript oraz TailwindCSS.",
       "tech": [
         {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", "alt": "React", "name": "React"},
         {"id": 2, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", "alt": "TypeScript", "name": "TypeScript"},
