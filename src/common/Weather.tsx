@@ -7,7 +7,7 @@ export function Weather() {
   const forecast = useWeather(53.35, -6.27, lang, "metric");
 
   return (
-    <div className="p-4 mb-4 border border-accent text-slate-400 rounded-lg">
+    <div className="p-4 mb-4 border border-accent text-text-color rounded-lg">
       {forecast ? (
       <div className="flex items-center">
         <img src={`https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`} alt="Weather" className="w-12 h-12 mr-4" />

@@ -7,8 +7,8 @@ const DATA = [
     id: "experience",
     content: (
       <ul className="pl-2 list-disc" key={"experience"}>
-        <li><a target="_blank" className="underline text-slate-400 hover:text-accent" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polish localization | 2024</li>
-        <li><a target="_blank" className="underline text-slate-400 hover:text-accent" href="https://zhp.ie/">Polish Scouting Association ZHP Irlandia</a> - Scout Leader | 01/2022 - 02/2023</li>
+        <li><a target="_blank" className="underline text-text-color hover:text-accent" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polish localization | 2024</li>
+        <li><a target="_blank" className="underline text-text-color hover:text-accent" href="https://zhp.ie/">Polish Scouting Association ZHP Irlandia</a> - Scout Leader | 01/2022 - 02/2023</li>
       </ul>
     )
   },
@@ -59,17 +59,17 @@ export function About() {
 
   return (
     <>
-      <section className="text-white pt-24" id="about">
+      <section className="pt-24" id="about">
         <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
           <figure>
             <img className="rounded-2xl h-200 w-200" src="/about-me.webp" alt="About Image" />
-            <figcaption className="text-center text-slate-400 text-lg">Roháčske plesá - Slovakia &#128248; Jakub Barabasz</figcaption>
+            <figcaption className="text-center text-text-color text-lg">Roháčske plesá - Slovakia &#128248; Jakub Barabasz</figcaption>
           </figure>
           <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-white mb-4">
               About Me
             </h2>
-            <p className="text-slate-400 lg:text-lg">
+            <p className="text-text-color lg:text-lg">
               I&apos;m Kuba, a 20 year old computer science student at TU Dublin. I&apos;ve been learning computer science since high school where I received an award for the year&apos;s top computer science student. In my free time I enjoy hiking, photography and skiing.
             </p>
             <div className="mt-2 flex items-center justify-center flex-wrap flex-row">

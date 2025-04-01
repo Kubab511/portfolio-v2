@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         "accent": "#70b8ff",
-        "outline-blue": "#3b9eff"
+        "outline-blue": "#3b9eff",
+        "text-color": "#cbd5e1"
       }
     },
   },

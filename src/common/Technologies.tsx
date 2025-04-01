@@ -17,7 +17,7 @@ export function Technologies() {
           {technologies.map((tech) => (
             <div className="flex flex-col" key={tech.id}>
               <img className="h-20 px-2" src={tech.src} alt={tech.alt} />
-              <p className="text-sm px-2 text-[#ADB7BE] select-none text-center">{tech.alt}</p>
+              <p className="text-sm px-2 text-text-color select-none text-center">{tech.alt}</p>
             </div>
           ))}
         </div>

@@ -27,10 +27,10 @@ export function Hero() {
                 repeat={0}
               />
             </h1>
-            <p className="text-slate-400 lg:text-lg mb-4">
+            <p className="text-text-color lg:text-lg mb-4">
               Student informatyki na 2 roku
             </p>
-            <p className="text-slate-400 lg:text-lg mb-4">  
+            <p className="text-text-color lg:text-lg mb-4">  
               &#128205; Dublin, Irlandia
             </p>
             <Weather />
