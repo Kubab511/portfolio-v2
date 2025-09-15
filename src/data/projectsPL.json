@@ -31,20 +31,6 @@
     },
     {
       "id": 3,
-      "title": "JBX Profiles",
-      "description": "Strona internetowa, używana do dystrybucji profilów do popularnego programu używanego razem z FS2020 o nazwie GSX. Stworzona w React z użyciem TypeScript oraz TailwindCSS.",
-      "tech": [
-        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", "alt": "React", "name": "React"},
-        {"id": 2, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", "alt": "TypeScript", "name": "TypeScript"},
-        {"id": 3, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", "alt": "TailwindCSS", "name": "TailwindCSS"}
-      ],
-      "image": "/projects/2.webp",
-      "gitUrl": "https://github.com/Kubab511/jbx-profiles",
-      "hasPreview": true,
-      "previewUrl": "https://jbx-profiles.com/"
-    },
-    {
-      "id": 4,
       "title": "Projekt z Mikroprocesorów",
       "description": "Prosta gra na płytkę Nucelo L031K6, w której grzacz zbiera paczki, póki nie skończy mu się czas. Im wyższy wynik, tym mniej czasu grzacz dostaje od każdej zebranej paczki.",
       "tech": [
@@ -54,6 +40,18 @@
       "gitUrl": "https://github.com/Kubab511/game_project",
       "hasPreview": true,
       "previewUrl": "https://youtu.be/RotdXScn5rw"
+    },
+    {
+      "id": 4,
+      "title": "Java Prediction App",
+      "description": "Prosta aplikacja, która oblicza prawdopodobieństwa wydarzeń na podstawie danych podanych przez użytkownika i generuje predykcje dla użytkownika.",
+      "tech": [
+        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", "alt": "Java", "name": "Java"}
+      ],
+      "image": "/projects/5.webp",
+      "gitUrl": "https://github.com/Kubab511/java-naive-bayes",
+      "hasPreview": false,
+      "previewUrl": ""
     }
   ]
 }

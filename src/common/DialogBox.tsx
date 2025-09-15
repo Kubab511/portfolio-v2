@@ -24,7 +24,7 @@ export function DialogBox({ project }: DialogBoxProps) {
       </div>
       <Dialog.Content size="3" maxWidth="500px">
         <p className="text-center text-white text-xl pb-4">{project.title}</p>
-        <p className="text-center text-[#ADB7BE] text-md pb-4">{project.description}</p>
+        <p className="text-center text-text-color text-md pb-4">{project.description}</p>
         <div className="pb-4">
           <Flex gap="2" justify="center">
             <Button variant="outline" onClick={() => handleButtonClick(project.gitUrl)}><Github />{strings[1]}</Button>

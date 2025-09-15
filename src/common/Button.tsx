@@ -13,7 +13,7 @@ type Item = {
 }
 
 export function Button({ active, selectTab, children }: Item) {
-  const buttonClasses = active ? "text-white" : "text-[#ADB7BE]"
+  const buttonClasses = active ? "text-white" : "text-text-color"
 
   return (
     <button onClick={selectTab}>

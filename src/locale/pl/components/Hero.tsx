@@ -28,7 +28,7 @@ export function Hero() {
               />
             </h1>
             <p className="text-text-color lg:text-lg mb-4">
-              Student informatyki na 2 roku
+              Student informatyki na 3 roku
             </p>
             <p className="text-text-color lg:text-lg mb-4">  
               &#128205; Dublin, Irlandia

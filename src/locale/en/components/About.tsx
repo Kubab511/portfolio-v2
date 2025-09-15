@@ -7,6 +7,7 @@ const DATA = [
     id: "experience",
     content: (
       <ul className="pl-2 list-disc" key={"experience"}>
+        <li><a target="_blank" className="underline text-text-color hover:text-accent" href="https://tfs.pl/en/">TimeFrame Software</a> - Full Stack Developer | 08.2025 - present</li>
         <li><a target="_blank" className="underline text-text-color hover:text-accent" href="https://store.steampowered.com/app/2289650/Mini_Airways/">Mini Airways</a> - Polish localization | 2024</li>
         <li><a target="_blank" className="underline text-text-color hover:text-accent" href="https://zhp.ie/">Polish Scouting Association ZHP Irlandia</a> - Scout Leader | 01/2022 - 02/2023</li>
       </ul>
