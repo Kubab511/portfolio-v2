@@ -52,6 +52,20 @@
       "gitUrl": "https://github.com/Kubab511/java-naive-bayes",
       "hasPreview": false,
       "previewUrl": ""
+    },
+    {
+      "id": 5,
+      "title": "Rozkład jazdy Luas",
+      "description": "Wrapper dla API Luasa (Systemu tramwajowego w Dublinie), który pokazuje rozkład jazdy na żywo dla wybranego przystanku.",
+      "tech": [
+        {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg", "alt": "Angular", "name": "Angular"},
+        {"id": 2, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg", "alt": "SASS", "name": "SASS"},
+        {"id": 3, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", "alt": "TypeScript", "name": "TypeScript"}
+      ],
+      "image": "/projects/6.webp",
+      "gitUrl": "https://github.com/Kubab511/luas-timetable",
+      "hasPreview": true,
+      "previewUrl": "https://luas.barabasz.dev"
     }
   ]
 }
