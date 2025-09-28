@@ -56,7 +56,7 @@
     {
       "id": 5,
       "title": "Luas Timetable",
-      "description": "Wrapper for the Luas (Dublin's tram) API which shows the live timetable for a selected stop.",
+      "description": "A live timetable app for the Luas (Dublin's tram system) utilizing a custom wrapper for the official API.",
       "tech": [
         {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg", "alt": "Angular", "name": "Angular"},
         {"id": 2, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg", "alt": "SASS", "name": "SASS"},

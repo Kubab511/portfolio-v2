@@ -56,7 +56,7 @@
     {
       "id": 5,
       "title": "Rozkład jazdy Luas",
-      "description": "Wrapper dla API Luasa (Systemu tramwajowego w Dublinie), który pokazuje rozkład jazdy na żywo dla wybranego przystanku.",
+      "description": "Aplikacja pokazująca rozkład jazdy na żywo dla Luasa (System tramwajowy w Dublinie) używający customowego wrappera dla oficjalnego API.",
       "tech": [
         {"id": 1, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg", "alt": "Angular", "name": "Angular"},
         {"id": 2, "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg", "alt": "SASS", "name": "SASS"},
